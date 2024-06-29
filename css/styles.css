@@ -1,0 +1,18 @@
+/* Fonts */
+
+@font-face {
+  font-display: swap;
+  font-family: "Red Hat Display";
+  src: url("../assets/fonts/redhatdisplay-variablefont_wght-webfont.woff2")
+      format("woff2"),
+    url("../assets/fonts/redhatdisplay-variablefont_wght-webfont.woff")
+      format("woff");
+  font-style: normal;
+}
+
+/* Basic styles */
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+}
