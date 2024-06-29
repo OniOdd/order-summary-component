@@ -18,6 +18,64 @@
     <title>Frontend Mentor | Order summary card</title>
   </head>
   <body>
-    <main class="page"></main>
+    <main class="page">
+      <article class="order-summary">
+        <header class="order-summary__header">
+          <figure class="order-summary__hero-wrapper">
+            <svg class="order-summary__hero">
+              <use href="./assets/images/sprite.svg#illustration-hero"></use>
+            </svg>
+          </figure>
+        </header>
+        <div class="order-summary__content">
+          <div class="order-summary__description">
+            <h1 class="order-summary__title">Order Summary</h1>
+            <p class="order-summary__text">
+              You can now listen to millions of songs, audiobooks, and podcasts
+              on any device anywhere you like!
+            </p>
+          </div>
+          <section
+            class="order-summary__plan-section"
+            aria-labelledby="annual-plan"
+          >
+            <figure class="order-summary__icon-music-wrapper">
+              <svg class="order-summary__icon-music">
+                <use href="./assets/images/sprite.svg#icon-music"></use>
+              </svg>
+            </figure>
+            <div class="order-summary__annual-plan-container">
+              <h2 class="order-summary__annual-plan" id="annual-plan">
+                Annual Plan
+              </h2>
+              <span class="order-summary__price">$59.99/year</span>
+            </div>
+            <button
+              class="order-summary__btn-change"
+              type="button"
+              aria-label="Change plan button"
+            >
+              Change
+            </button>
+          </section>
+          <div class="order-summary__buttons">
+            <button
+              class="order-summary__btn-proceed"
+              type="button"
+              aria-label="Proceed to payment button"
+            >
+              Proceed to Payment
+            </button>
+            <button
+              class="order-summary__btn-cancel"
+              type="button"
+              aria-label="Cancel order button"
+            >
+              Cancel Order
+            </button>
+          </div>
+        </div>
+      </article>
+    </main>
   </body>
 </html>
