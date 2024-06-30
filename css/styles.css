@@ -18,6 +18,7 @@
   --clr-very-pale-blue: hsl(225, 100%, 98%);
   --clr-desaturated-blue: hsl(224, 23%, 55%);
   --clr-dark-blue: hsl(223, 47%, 23%);
+  --clr-hover: hsl(245, 83%, 68%);
 }
 
 /* Basic styles */
@@ -118,6 +119,7 @@ button {
 
 .order-summary__plan-section {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   column-gap: 20px;
   padding: clamp(17px, -6.992px + 6.4vw, 25px)
@@ -128,8 +130,9 @@ button {
   border-radius: 14px;
 }
 
-.order-summary__icon-music-wrapper {
-  margin-inline-end: 20px;
+.order-summary__plan-wrapper {
+  display: flex;
+  column-gap: 20px;
 }
 
 .order-summary__icon-music {
@@ -144,12 +147,32 @@ button {
 }
 
 .order-summary__annual-plan {
+  font-size: clamp(0.875rem, 8px + 1.6vw, 1rem);
+  font-weight: 700;
+  color: var(--clr-dark-blue);
 }
 
 .order-summary__price {
+  font-size: clamp(0.875rem, 8px + 1.6vw, 1rem);
 }
 
 .order-summary__btn-change {
+  padding-block: 8px;
+  font-size: clamp(0.813rem, 10.032px + 0.7936vw, 0.875rem);
+  font-weight: 700;
+  color: var(--clr-bright-blue);
+  text-decoration: underline;
+  transition: all 0.15s;
+}
+
+.order-summary__btn-change:hover,
+.order-summary__btn-change:focus-visible {
+  color: var(--clr-hover);
+  text-decoration: none;
+}
+
+.order-summary__btn-change:active {
+  color: hsl(245, 83%, 80%);
 }
 
 /* Media queries */
