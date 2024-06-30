@@ -122,6 +122,7 @@ button {
   justify-content: space-between;
   align-items: center;
   column-gap: 20px;
+  margin-block-end: clamp(24px, 6.4vw, 32px);
   padding: clamp(17px, -6.992px + 6.4vw, 25px)
     clamp(17px, -6.992px + 6.4vw, 25px) clamp(16px, -11.024px + 7.2064vw, 25px)
     clamp(16px, -8px + 6.4vw, 24px);
@@ -173,6 +174,50 @@ button {
 
 .order-summary__btn-change:active {
   color: hsl(245, 83%, 80%);
+}
+
+.order-summary__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: clamp(19px, -4.992px + 6.4vw, 27px);
+  font-size: 0.938rem;
+  font-weight: 900;
+}
+
+.order-summary__btn-proceed {
+  inline-size: 100%;
+  padding: 16px;
+  color: var(--clr-white);
+  background-color: var(--clr-bright-blue);
+  border-radius: 10px;
+  transition: background-color 0.15s;
+  box-shadow: 0 10px 40px hsla(245, 75%, 52%, 0.3);
+}
+
+.order-summary__btn-proceed:hover,
+.order-summary__btn-proceed:focus-visible {
+  background-color: var(--clr-hover);
+}
+
+.order-summary__btn-proceed:active {
+  background-color: hsl(245, 83%, 80%);
+}
+
+.order-summary__btn-cancel {
+  inline-size: 40%;
+  padding: 6px;
+  border-radius: 10px;
+  transition: color 0.15s;
+}
+
+.order-summary__btn-cancel:hover,
+.order-summary__btn-cancel:focus-visible {
+  color: var(--clr-dark-blue);
+}
+
+.order-summary__btn-cancel:active {
+  color: hsl(223, 47%, 50%);
 }
 
 /* Media queries */
